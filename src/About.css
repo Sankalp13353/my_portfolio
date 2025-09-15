@@ -1,94 +1,88 @@
 .about {
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #f8fbff, #e6f0ff);
+  font-family: "Poppins", sans-serif;
+  color: #1a1a1a;
 }
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
 .about-left {
   flex: 1;
   min-width: 300px;
-  color: #333;
 }
 
 .about-left p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 25px;
-  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #333;
 }
 
 .coding-stats h3 {
+  font-size: 1.5rem;
   margin-bottom: 20px;
   color: #2c3e50;
 }
 
 .platforms {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .platform-card {
   background: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 12px;
-  width: 180px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  transition: 0.3s;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
   text-align: center;
-}
-
-.platform-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.25);
-  border-color: #3b82f6;
+  flex: 1;
+  min-width: 200px;
 }
 
 .platform-card h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #2c3e50;
+  color: #007bff;
 }
 
+.platform-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.platform-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
 
 .about-right {
   flex: 1;
+  text-align: center;
   min-width: 280px;
-  display: flex;
-  justify-content: center;
 }
 
 .profile-img {
   width: 280px;
   height: 280px;
-  object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #3b82f6;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-  transition: 0.4s;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+  transition: all 0.4s ease;
 }
 
 .profile-img:hover {
   transform: scale(1.05);
-  border-color: #6366f1;
-}
-
-@media (max-width: 900px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-right {
-    margin-top: 30px;
-  }
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.5),
+              0 0 30px rgba(0, 123, 255, 0.4);
 }
