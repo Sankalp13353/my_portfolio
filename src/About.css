@@ -1,17 +1,30 @@
+/* About Section */
 .about {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  color: #333;
 }
 
 .about h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
+  color: #2c3e50;
 }
 
 .about p {
   max-width: 700px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* Skills */
+.skills h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #34495e;
 }
 
 .skills ul {
@@ -24,32 +37,86 @@
 }
 
 .skills li {
-  background: #f0f0f0;
-  padding: 8px 16px;
-  border-radius: 20px;
+  background: #eef2ff;
+  color: #3b82f6;
+  padding: 10px 18px;
+  border-radius: 25px;
   font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
 }
 
+.skills li:hover {
+  background: #3b82f6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Coding Stats */
 .coding-stats {
-  margin-top: 40px;
+  margin-top: 50px;
+}
+
+.coding-stats h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #34495e;
 }
 
 .platforms {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .platform-card {
   background: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 12px;
-  width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+  padding: 25px 20px;
+  border-radius: 16px;
+  width: 220px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .platform-card h4 {
+  font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.platform-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover effect */
+.platform-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+.platform-card:hover h4 {
+  color: #3b82f6;
+}
+
+.platform-card:hover p {
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills ul {
+    gap: 10px;
+  }
+
+  .platform-card {
+    width: 100%;
+    max-width: 300px;
+  }
 }

@@ -1,11 +1,12 @@
-import MainSection from "./components/MainSection";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+
 
 function App() {
   return (
     <>
       <Navbar />
-      <MainSection />
+      <About />
     </>
   );
 }
